@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class CyclicShort {
 
-    public static void main( String[] args ) {
-        int[] arr = { 3, 5, 2, 1, 4 };
+    public static void main(String[] args) {
+        int[] arr = {3, 5, 2, 1, 4};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -25,5 +25,4 @@ public class CyclicShort {
         arr[first] = arr[sec];
         arr[sec] = temp;
     }
-
 }
