@@ -19,7 +19,6 @@ public class prettyPrinting {
         for (int i = 0; i < 26; i++) {
             char ch = (char)('a' + i); 
             System.out.println(ch); // o: a...z;
-            
         }
 
     }
