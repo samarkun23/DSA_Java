@@ -4,7 +4,8 @@ public class question1 {
     public static void main(String[] args) {
         // pattern(2); 
         // patter2(3);
-        pattern3(4);
+        // pattern3(4);
+        pattern5(5);
     }
 
     static void pattern(int n){
@@ -53,6 +54,23 @@ public class question1 {
             for (int col = 1; col <= c ; col++) {
                 System.out.print("* "); 
             }
+            System.out.println();
+        }
+    }
+
+
+    static void pattern5(int n){
+        // n = 3
+        // *
+        // * *
+        // * * * 
+        // * *
+        // *
+        for (int row = 0; row < 2 * n; row++) {
+            int totalColsRow = row > n ? 2 * n - row : row;
+            for (int col = 0; col < totalColsRow; col++) {
+                System.out.print("* "); 
+            } 
             System.out.println();
         }
     }
