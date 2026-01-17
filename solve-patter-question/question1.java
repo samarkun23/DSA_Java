@@ -5,7 +5,8 @@ public class question1 {
         // pattern(2); 
         // patter2(3);
         // pattern3(4);
-        pattern5(5);
+        // pattern5(5);
+        patter6(5);
     }
 
     static void pattern(int n){
@@ -71,6 +72,28 @@ public class question1 {
             for (int col = 0; col < totalColsRow; col++) {
                 System.out.print("* "); 
             } 
+            System.out.println();
+        }
+    }
+
+    static void patter6(int n){
+        // n = 3
+        //    *
+        //   * *
+        //  * * *
+        //   * *
+        //    * 
+        for (int row = 0; row < 2*n ; row++) {
+            int totalColsRow = row > n ? 2 * n - row : row;
+            
+            int noOfSpaces = n - totalColsRow;
+            for (int s = 0; s < noOfSpaces; s++) {
+                System.out.print(" "); 
+            }
+
+            for (int col = 0; col < totalColsRow; col++) {
+                System.out.print("* "); 
+            }
             System.out.println();
         }
     }
